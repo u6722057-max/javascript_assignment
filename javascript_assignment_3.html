@@ -8,7 +8,7 @@
 <body>
     <h3>Check the Browser Console to see the Filtered List</h3>
     <script>
-      // 1. Copy the provided array of names
+
         const people = [
         "Alice Anderson",
         "Aaron Adams",
@@ -32,10 +32,10 @@
         "Julia James"
     ];
 
-      // 2. Define the target letter to filter by (e.g., "B")
+
     const targetLetter = "B";
 
-      // 3. Use the filter() method with an anonymous arrow function callback
+
     const result = people.filter((person) => {
         // Check if the first character matches our target letter
         return person.charAt(0) === targetLetter;
