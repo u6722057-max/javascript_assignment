@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Today Fruits</h3>
+    <ul id="list1"></ul>
+    <hr/>
+    <h3>Today Vegetables</h3>
+    <ul id="list2"></ul>
+    <script>
+        let fruits = ["Apple", "Banana", "Orange", "Mango", "Strawberry"];
+        let vegetables = ["Carrot", "Broccoli", "Spinach", "Tomato", "Cucumber"];
+
+        for (let i = 0; i < fruits.length; i++) {
+            document.getElementById("list1").innerHTML += `<li>${fruits[i]}</li>`;
+        }
+
+        for (let j = 0; j < vegetables.length; j++) {
+            document.getElementById("list2").innerHTML += `<li>${vegetables[j]}</li>`;
+        }
+    </script>
+</body>
+</html>
