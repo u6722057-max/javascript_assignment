@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Check the Browser Console (F12) to see the Filtered List</h3>
+    <script>
+      // 1. Copy the provided array of names
+        const people = [
+        "Alice Anderson",
+        "Aaron Adams",
+        "Bella Brown",
+        "Brian Black",
+        "Cathy Carter",
+        "Charles Cooper",
+        "Diana Davis",
+        "Daniel Drake",
+        "Ella Evans",
+        "Ethan Edwards",
+        "Fiona Fisher",
+        "Frank Foster",
+        "Grace Green",
+        "Gavin Gray",
+        "Hannah Harris",
+        "Henry Hill",
+        "Isabella Ingram",
+        "Ian Irving",
+        "Jack Johnson",
+        "Julia James"
+    ];
+
+      // 2. Define the target letter to filter by (e.g., "B")
+    const targetLetter = "B";
+
+      // 3. Use the filter() method with an anonymous arrow function callback
+    const result = people.filter((person) => {
+        // Check if the first character matches our target letter
+        return person.charAt(0) === targetLetter;
+    });
+
+      // 4. Display the filtered list in the console
+    console.log(`Names starting with "${targetLetter}":`, result);
+    </script>
+</body>
+</html>
